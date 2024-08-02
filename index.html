@@ -117,12 +117,12 @@
 				<div style="display: flex; flex-direction: column; height: 100%;">
 					<span class="image fit main"><img src="Index-High-Tech-Future.jpg" alt=""/></span>
 					
-						<div class="content" style="flex: 1; height: 65%">
+						<div class="content" style="flex: 1; height: 60%">
 							<div class="container" style="height: 100%;">
 								<div class="row" style="height: 100%;">
 									<div class="about-container" style="height: 100%;">
 										<h1>About Me</h1>
-										
+										<br>
 										<div class="about-content">
 											<img src="IMG_1300.jpg" alt="John Doe" style="width: 180px; height: 219px; border-radius: 10px;">
 											<div class="info-cards">
@@ -157,7 +157,7 @@
 					}
 					.about-container {
 						text-align: center;
-						padding: 80px;
+						padding: 20px;
 						width: 100%;
 						max-width: 1700px;
 						margin-top: 0px;
@@ -168,15 +168,16 @@
 					}
 					.about-content {
 						display: flex;
-						justify-content: space-between;
 						align-items: center;
 						margin-top: 0px;
 					}
+
 					.about-content img {
-						width: 200px;
-						height: 200px;
+						width: 180px; /* Set to match the image size you want */
+						height: 219px;
 						border-radius: 10px;
 					}
+
 					.info-cards {
 						display: flex;
 						flex-direction: column;
@@ -184,22 +185,26 @@
 						margin-left: 20px;
 						flex: 1;
 					}
+
 					.info-card {
 						background-color: #d73e5a;
-						padding: 0px;
+						padding: 10px; /* Add padding for better spacing */
 						margin: 10px 0;
 						border-radius: 10px;
 						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 						width: 100%;
 					}
+
 					.info-card h3 {
 						margin: 0;
 						font-size: 1.2em;
 					}
+
 					.info-card p {
 						margin: 5px 0 0;
 						font-size: 1em;
 					}
+
 					.additional-info {
 						margin-top: 20px;
 						text-align: left;
