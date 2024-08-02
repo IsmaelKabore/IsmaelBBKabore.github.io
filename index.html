@@ -113,11 +113,10 @@
 				</section>
 
 			<!-- One -->
-				<section id="one" class="spotlight style1 bottom" style="height: 100vh;">
+				<section id="one" class="spotlight style1 bottom" >
 					<div style="display: flex; flex-direction: column; height: 100%;">
-						<span class="image fit main" style="height: 50vh;">
-							<img src="Index-High-Tech-Future.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
-						</span>
+						<span class="image fit main"><img src="Index-High-Tech-Future.jpg" alt=""/></span>
+						
 						<div class="content" style="flex: 1; overflow-y: auto; padding: 20px;">
 							<div class="container" style="height: 100%;">
 								<div class="row" style="height: 100%; display: flex; flex-direction: row;">
@@ -149,82 +148,114 @@
 				
 
 				<style>
-					/* Media Queries */
-				@media (max-width: 768px) {
-					.about-container h1 {
-						font-size: 1.5em;
+					/* Basic Reset and Body Styling */
+					body {
+						font-family: Arial, sans-serif;
+						margin: 0;
+						padding: 0;
 					}
-					.about-content {
+
+					/* Section Styling */
+					#one {
+						display: flex;
 						flex-direction: column;
-						align-items: center;
+						height: 100vh;
+						width: 100%;
+						overflow: hidden;
 					}
-					.about-content img {
-						width: 120px;
-						margin-right: 0;
+
+					/* Container Styling */
+					.container {
+						display: flex;
+						flex-direction: column;
+						height: 100%;
+						width: 100%;
+						padding: 20px;
+					}
+
+					/* About Content Styling */
+					.about-content {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						flex: 1;
+						overflow: auto;
 						margin-bottom: 20px;
 					}
-					.info-cards {
-						align-items: center;
-						width: 90%;
-					}
-				}
 
-				@media (max-width: 480px) {
-					.about-container h1 {
+					.profile-image {
+						width: 150px;
+						height: 180px;
+						border-radius: 10px;
+						object-fit: cover;
+					}
+
+					.info-cards {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						margin-left: 20px;
+						flex: 1;
+					}
+
+					.info-card {
+						background-color: #d73e5a;
+						padding: 10px;
+						margin: 10px 0;
+						border-radius: 10px;
+						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+						width: 100%;
+						text-align: center;
+					}
+
+					.info-card h3 {
+						margin: 0;
 						font-size: 1.2em;
 					}
-					.about-content img {
-						width: 100px;
+
+					.info-card p {
+						margin: 5px 0 0;
+						font-size: 1em;
 					}
-					.info-cards {
-						width: 95%;
+
+					.additional-info {
+						text-align: center;
+						margin-top: 20px;
 					}
-				}
 
-				.about-content {
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-				}
+					.additional-info p {
+						font-size: 1em;
+						color: #555;
+					}
 
-				.info-cards {
-					display: flex;
-					flex-direction: column;
-					align-items: center; /* Center text in columns */
-					margin-left: 20px;
-					flex: 1;
-				}
+					/* Responsive Styling */
+					@media (max-width: 768px) {
+						.profile-image {
+							width: 120px;
+							height: 150px;
+						}
+						.about-content {
+							flex-direction: column;
+							align-items: center;
+						}
+						.info-cards {
+							width: 100%;
+							align-items: center;
+						}
+					}
 
-				.info-card {
-					background-color: #d73e5a;
-					padding: 10px;
-					margin: 10px 0;
-					border-radius: 10px;
-					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-					width: 100%;
-					text-align: center; /* Center text in info-card */
-				}
-
-				.info-card h3 {
-					margin: 0;
-					font-size: 1.2em;
-				}
-
-				.info-card p {
-					margin: 5px 0 0;
-					font-size: 1em;
-				}
-
-				.additional-info {
-					margin-top: 20px;
-					text-align: center; /* Center text in additional-info */
-				}
-
-				.additional-info p {
-					font-size: 1em;
-					color: #555;
-				}
-
+					@media (max-width: 480px) {
+						.profile-image {
+							width: 100px;
+							height: 120px;
+						}
+						.about-content {
+							padding: 10px;
+						}
+						.info-cards {
+							width: 100%;
+						}
+					}
 
 				</style>
 
