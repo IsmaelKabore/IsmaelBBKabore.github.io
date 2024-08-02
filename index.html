@@ -113,147 +113,120 @@
 				</section>
 
 			<!-- One -->
-				<section id="one" class="spotlight style1 bottom" >
-					<div style="display: flex; flex-direction: column; height: 100%;">
-						<span class="image fit main"><img src="Index-High-Tech-Future.jpg" alt=""/></span>
-						
-						<div class="content" style="flex: 1; overflow-y: auto; padding: 20px;">
+			<section id="one" class="spotlight style1 bottom" >
+				<div style="display: flex; flex-direction: column; height: 100%;">
+					<span class="image fit main"><img src="Index-High-Tech-Future.jpg" alt=""/></span>
+					
+						<div class="content" style="flex: 1; height: 65%">
 							<div class="container" style="height: 100%;">
-								<div class="row" style="height: 100%; display: flex; flex-direction: row;">
-									<div class="about-container" style="flex: 1; text-align: left; max-width: 1000px; margin: 0 auto;">
-										<div class="about-content" style="display: flex; flex-direction: row; align-items: center; margin-top: 20px;">
-											<img src="IMG_1300.jpg" alt="John Doe" style="width: 180px; height: 219px; border-radius: 10px; margin-right: 20px;">
-											<div class="info-cards" style="display: flex; flex-direction: column; align-items: flex-start;">
-												<div class="info-card" style="background-color: #d73e5a; padding: 10px; margin: 10px 0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 100%;">
-													<h3 style="margin: 0; font-size: 1.2em;">Experience</h3>
-													<p style="margin: 5px 0 0; font-size: 1em;">2+ years in Mathematic Tutoring</p>
+								<div class="row" style="height: 100%;">
+									<div class="about-container" style="height: 100%;">
+										<h1>About Me</h1>
+										
+										<div class="about-content">
+											<img src="IMG_1300.jpg" alt="John Doe" style="width: 180px; height: 219px; border-radius: 10px;">
+											<div class="info-cards">
+												<div class="info-card">
+													<h3>Experience</h3>
+													<p>2+ years in Mathematic Tutoring</p>
 												</div>
-												<div class="info-card" style="background-color: #d73e5a; padding: 10px; margin: 10px 0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 100%;">
-													<h3 style="margin: 0; font-size: 1.2em;">Education</h3>
-													<p style="margin: 5px 0 0; font-size: 1em;">A.S Associate's Degree in Math<br> Pursuing a Bachelor's Degree in Computer Science</p>
+												<div class="info-card">
+													<h3>Education</h3>
+													<p>A.S Associate's Degree in Math<br> Pursuing a Bachelor's Degree in Computer Science</p>
 												</div>
 											</div>
 										</div>
-										<div class="additional-info" style="margin-top: 20px; text-align: left;">
-											<p style="font-size: 1em; color: #555;">HEY</p>
+										<div class="additional-info">
+											<p> HEY</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="#two" class="goto-next scrolly" style="position: absolute; bottom: 20px; right: 20px; color: #fff;">Next</a>
+					<a href="#two" class="goto-next scrolly">Next</a>
 				</section>
 
-				
-
 				<style>
-					/* Basic Reset and Body Styling */
 					body {
 						font-family: Arial, sans-serif;
+						height: 100%;
 						margin: 0;
 						padding: 0;
+						
 					}
-
-					/* Section Styling */
-					#one {
-						display: flex;
-						flex-direction: column;
-						height: 100vh;
+					.about-container {
+						text-align: center;
+						padding: 80px;
 						width: 100%;
-						overflow: hidden;
+						max-width: 1700px;
+						margin-top: 0px;
 					}
-
-					/* Container Styling */
-					.container {
-						display: flex;
-						flex-direction: column;
-						height: 100%;
-						width: 100%;
-						padding: 20px;
+					.about-container h1 {
+						margin-bottom: 20px;
+						font-size: 3em;
 					}
-
-					/* About Content Styling */
 					.about-content {
 						display: flex;
-						flex-direction: row;
+						justify-content: space-between;
 						align-items: center;
-						flex: 1;
-						overflow: auto;
-						margin-bottom: 20px;
+						margin-top: 0px;
 					}
-
-					.profile-image {
-						width: 150px;
-						height: 180px;
+					.about-content img {
+						width: 200px;
+						height: 200px;
 						border-radius: 10px;
-						object-fit: cover;
 					}
-
 					.info-cards {
 						display: flex;
 						flex-direction: column;
-						align-items: center;
+						align-items: flex-start;
 						margin-left: 20px;
 						flex: 1;
 					}
-
 					.info-card {
 						background-color: #d73e5a;
-						padding: 10px;
+						padding: 0px;
 						margin: 10px 0;
 						border-radius: 10px;
 						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 						width: 100%;
-						text-align: center;
 					}
-
 					.info-card h3 {
 						margin: 0;
 						font-size: 1.2em;
 					}
-
 					.info-card p {
 						margin: 5px 0 0;
 						font-size: 1em;
 					}
-
 					.additional-info {
-						text-align: center;
 						margin-top: 20px;
+						text-align: left;
 					}
-
 					.additional-info p {
 						font-size: 1em;
 						color: #555;
 					}
-
-					/* Responsive Styling */
+					/* Media Queries */
 					@media (max-width: 768px) {
-						.profile-image {
+						.about-container h1 {
+							font-size: 1.5em;
+						}
+						.about-content img {
 							width: 120px;
-							height: 150px;
-						}
-						.about-content {
-							flex-direction: column;
-							align-items: center;
-						}
-						.info-cards {
-							width: 100%;
-							align-items: center;
 						}
 					}
 
 					@media (max-width: 480px) {
-						.profile-image {
+						.about-container h1 {
+							font-size: 1.2em;
+						}
+						.about-content img {
 							width: 100px;
-							height: 120px;
 						}
-						.about-content {
-							padding: 10px;
-						}
-						.info-cards {
-							width: 100%;
+						.info-card {
+							width: 95%;
 						}
 					}
 
