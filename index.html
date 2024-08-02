@@ -41,6 +41,7 @@
 								height: 320px;
 								border-radius: 100%;
 								object-fit: cover;
+								margin: 0 auto;
 							}
 							
 							@media (max-width: 768px) {
@@ -208,6 +209,28 @@
 						font-size: 1em;
 						color: #555;
 					}
+					/* Media Queries */
+					@media (max-width: 768px) {
+						.about-container h1 {
+							font-size: 1.5em;
+						}
+						.about-content img {
+							width: 120px;
+						}
+					}
+
+					@media (max-width: 480px) {
+						.about-container h1 {
+							font-size: 1.2em;
+						}
+						.about-content img {
+							width: 100px;
+						}
+						.info-card {
+							width: 95%;
+						}
+					}
+
 				</style>
 
 			<!-- Two -->
