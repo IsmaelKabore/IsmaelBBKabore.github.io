@@ -380,59 +380,81 @@
 				</section>
 
 				<style>
+				.form-contact-container {
+					display: flex;
+					flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+					border: 3px solid #ccc;
+					padding: 5px;
+				}
+
+				.form-contact-container form {
+					flex: 1;
+					padding-right: 20px;
+					border-right: 1px solid #ccc;
+					box-sizing: border-box; /* Include padding and border in element's total width and height */
+				}
+
+				.vertical-line {
+					width: 1px;
+					background-color: #ccc;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				.contact-info {
+					flex: 1;
+					padding-left: 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					color: #f2f6f6;
+					box-sizing: border-box; /* Include padding and border in element's total width and height */
+				}
+
+				.contact-info a {
+					color: #f2f7f6; /* Change to a color that stands out against the background */
+					text-decoration: none;
+				}
+
+				.contact-info h3, .contact-info p {
+					color: #f8f6f6; /* Ensure the text color is visible */
+					margin: 0; /* Remove extra margin for mobile */
+				}
+
+				.info-section {
+					padding: 10px 0;
+				}
+
+				.horizontal-line {
+					height: 1px;
+					background-color: #ccc;
+					margin: 10px 0;
+				}
+
+				/* Responsive Styles */
+				@media (max-width: 768px) {
 					.form-contact-container {
-						display: flex;
-						justify-content: space-between;
-						position: relative;
-						border: 3px solid #ccc;
-						padding: 5px;
+						flex-direction: column; /* Stack items vertically on small screens */
 					}
 
 					.form-contact-container form {
-						flex: 1;
-						padding-right: 20px;
-						border-right: 1px solid #ccc;
-					}
-
-					.vertical-line {
-						width: 1px;
-						background-color: #ccc;
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						left: 50%;
-						transform: translateX(-50%);
+						padding-right: 0;
+						border-right: none;
+						border-bottom: 1px solid #ccc;
 					}
 
 					.contact-info {
-						flex: 1;
-						padding-left: 20px;
-						display: flex;
-						flex-direction: column;
-						justify-content: space-evenly;
-						color: #f2f6f6;
+						padding-left: 0;
 					}
 
-					.contact-info a {
-						color: #f2f7f6; /* Change to a color that stands out against the background */
-						text-decoration: none;
+					.vertical-line {
+						display: none; /* Hide the vertical line on small screens */
 					}
+				}
 
-					.contact-info h3, .contact-info p {
-						color: #f8f6f6; /* Ensure the text color is visible */
-						margin-left: 50px;
-					}
-
-					.info-section {
-						padding: 10px 0;
-						size: 50px;
-					}
-
-					.horizontal-line {
-						height: 1px;
-						background-color: #ccc;
-						margin: 10px 0;
-					}
 				</style>
 
 
