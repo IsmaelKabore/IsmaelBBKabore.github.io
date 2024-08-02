@@ -33,17 +33,31 @@
 				<section id="banner">
 					<div class="content">
 						<span class="image">
-							<img src="IMG_3545A5A70D32-1.jpeg" style="align-items: center" class="circle-image">
-							<style>
+							<img src="IMG_3545A5A70D32-1.jpeg" class="circle-image" style="align-items: center;">
+						</span>
+						<style>
+							.circle-image {
+								width: 200px;
+								height: 310px;
+								border-radius: 150%;
+								object-fit: cover;
+							}
+							
+							@media (max-width: 768px) {
 								.circle-image {
-										width: 200px;
-										height: 310px;
-										border-radius: 150%;
-										object-fit: cover;
-										
-									}
-							</style>
-						</span>	
+									width: 150px;
+									height: 233px;
+								}
+							}
+							
+							@media (max-width: 480px) {
+								.circle-image {
+									width: 120px;
+									height: 186px;
+								}
+							}
+						</style>
+							
 															
 						<header style="text-align: center; margin-bottom: 20px;">
 							<h2>Hello, I am Ismael Kabore</h2>
